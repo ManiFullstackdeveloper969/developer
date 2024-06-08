@@ -1,0 +1,118 @@
+/* App.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container.task-list {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-header h2 {
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+}
+
+.task-item div {
+    flex: 1;
+}
+
+.task-priority {
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90px;
+}
+
+.priority-high {
+    color: red;
+}
+
+.priority-medium {
+    color: orange;
+}
+
+.priority-low {
+    color: green;
+}
+
+.task-status {
+    text-align: center;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-actions button {
+    margin-left: 5px;
+}
+
+/* Modal styles */
+.modal {
+    display: block;
+    overflow: auto;
+}
+
+.modal.fade .modal-dialog {
+    transform: none !important;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-footer {
+    justify-content: flex-end;
+    border-top: none;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
